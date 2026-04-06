@@ -1,0 +1,21 @@
+Steps
+
+kubectl create namespace vote
+
+kubectl create -f vote-service.yaml -n vote
+
+kubectl create -f vote-deploy.yaml -n vote
+
+kubectl create -f redis-service.yaml -n vote
+
+kubectl create -f redis-deploy.yaml -n vote
+
+kubectl create -f postgres-service.yaml -n vote
+
+kubectl create -f postgres-deploy.yaml -n vote
+
+kubectl create -f result-app-deploy.yaml -n vote
+
+kubectl create -f result-app-service.yaml -n vote
+
+kubectl create -f worker.yaml -n vote 
