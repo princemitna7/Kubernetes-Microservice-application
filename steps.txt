@@ -1,5 +1,0 @@
-Steps
-
-kubectl create namespace vote
-
-kubectl create -f . -n vote
