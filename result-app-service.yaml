@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: result
   labels:
-    name: result-service
     app: voting-app
 spec:
   type: NodePort
@@ -12,5 +11,5 @@ spec:
       targetPort: 80
       nodePort: 31001
   selector:
-    name: result
     app: voting-app
+    name: result
